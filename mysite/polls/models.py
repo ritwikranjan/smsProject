@@ -4,6 +4,7 @@ import datetime
 
 # Create your models here.
 class Question(models.Model):
+    questions = models.Manager()
     question_text = models.CharField(max_length= 200)
     pub_date = models.DateTimeField('date published')
     def __str__(self):
